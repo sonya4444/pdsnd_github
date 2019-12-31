@@ -18,3 +18,6 @@ https://intellipaat.com/community/5151/how-do-i-extract-the-date-year-month-from
 https://stackoverflow.com/questions/27575587/python-indexerror-index-out-of-bounds
 https://docs.scipy.org/doc/scipy-0.19.0/reference/generated/scipy.stats.mode.html
 https://github.com/ozlerhakan/bikeshare/blob/master/bikeshare.py
+https://docs.python.org/3.4/library/statistics.html
+https://www.geeksforgeeks.org/python-statistics-mode-function/
+https://thispointer.com/python-pandas-how-to-get-column-and-row-names-in-dataframe/
