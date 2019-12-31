@@ -21,7 +21,7 @@ def get_filters():
     days = ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
 
 
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! My names Sonya Let\'s explore some US bikeshare data!')
 
 
 
@@ -119,7 +119,7 @@ def station_stats(df):
     print('Most Commonly Used End Station: ', most_common_end_station)
 
 
-    
+
 
     Combined_Station = df.groupby(['Start Station', 'End Station']).count()
    # combined_stat2 = df ['Start Station'] +  df ['End Station'].mode()[0]
