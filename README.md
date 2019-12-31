@@ -5,7 +5,7 @@
 Project Title  is  Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+This project provides statistical data for Bike Rentals  in Chicago, New York and Washington.
 
 ### Files used
 Include the files used
