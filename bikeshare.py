@@ -86,16 +86,16 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+
     most_common_month = df['month'].mode()[0]
     print('Most Common Month: ', most_common_month)
 
-    # TO DO: display the most common day of week
+
     most_popular_day = df['day_of_week'].mode()[0]
     print('Most Common Day:', most_popular_day)
 
 
-    # TO DO: display the most common start hour
+
     df['hour'] = df['Start Time'].dt.hour
     most_common_start_hour = df['hour'].mode()[0]
     print('Most Common Hour:', most_common_start_hour)
@@ -192,8 +192,7 @@ def disp_raw_data(df):
     Returns:
        none
     '''
-    #omit irrelevant columns from visualization
-   # df = df.drop(['month', 'day_of_month'], axis = 1)
+    
     row_index = 0
 
     see_data = input("\nYou like to see rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
