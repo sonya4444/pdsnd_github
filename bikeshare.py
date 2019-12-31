@@ -23,7 +23,7 @@ def get_filters():
 
     print('Hello! Let\'s explore some US bikeshare data!')
 
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+
 
     while True:
       city = input("Which city would you like to filter by: New York City, Chicago or Washington?\n").lower()
@@ -33,7 +33,7 @@ def get_filters():
       else:
         break
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+
     while True:
       month = input("Which month would you like: All, January, February, March, April, May, June?\n").lower()
       if month not in months:
@@ -42,7 +42,7 @@ def get_filters():
       else:
         break
 
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+
     while True:
       day = input("Which day would you like? 'All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',         'Sunday'\n").lower()
       if day not in days:
@@ -114,18 +114,17 @@ def station_stats(df):
     print('Most Commonly Used Start Station: ', most_common_start_station)
 
 
-    # TO DO: display most commonly used end station
+
     most_common_end_station = df['End Station'].mode()[0]
     print('Most Commonly Used End Station: ', most_common_end_station)
 
 
-    # TO DO: display most frequent combination of start station and end station trip
+    
 
     Combined_Station = df.groupby(['Start Station', 'End Station']).count()
    # combined_stat2 = df ['Start Station'] +  df ['End Station'].mode()[0]
     combined_stat2 =  ( df ['Start Station'] + '/' + df ['End Station']).mode()[0]
-    #print('\nSonyaupdated\n', combined_stat2)
-    #print('\nMost Commonly Used Combination of Start Station and End Station Trip:\n', most_common_start_station, " &         ", most_common_end_station)
+
     print('\nMost Commonly Used Combination of Start Station and End Station Trip:\n', combined_stat2)
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
